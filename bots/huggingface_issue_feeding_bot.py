@@ -60,7 +60,6 @@ def fetch_hf_all_issues(model_name):
 
     return response
 
-
 if __name__ == '__main__':
     model_names = ['Yi-VL-34B', 'Yi-6B-Chat-4bits', 'Yi-34B', 'Yi-34B-200K', 'Yi-6B-Chat-8bits', 'Yi-34B-Chat-4bits',
                    'Yi-34B-Chat-8bits', 'Yi-6B-200K', 'Yi-9B', 'Yi-6B-Chat', 'Yi-VL-6B', 'Yi-34B-Chat', 'Yi-6B']

@@ -43,7 +43,6 @@ def send_message(id, title, content, url):
         return
     print("消息发送成功")
 
-
 if __name__ == '__main__':
     last_posted_issue_id = None
     while True:
