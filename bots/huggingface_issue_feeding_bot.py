@@ -1,5 +1,9 @@
 from datetime import datetime
 import time
+import os
+import sys
+# Add the parent directory to the sys.path to find the util module
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from util.github_util import *
 
 timestamp = int(datetime.now().timestamp())
@@ -60,12 +64,14 @@ def fetch_hf_all_issues(model_name):
 
     return response
 
+
 if __name__ == '__main__':
     model_names = ['Yi-VL-34B', 'Yi-6B-Chat-4bits', 'Yi-34B', 'Yi-34B-200K', 'Yi-6B-Chat-8bits', 'Yi-34B-Chat-4bits',
-                   'Yi-34B-Chat-8bits', 'Yi-6B-200K', 'Yi-9B', 'Yi-6B-Chat', 'Yi-VL-6B', 'Yi-34B-Chat', 'Yi-6B']
+                   'Yi-34B-Chat-8bits', 'Yi-6B-200K', 'Yi-9B', 'Yi-6B-Chat', 'Yi-VL-6B', 'Yi-34B-Chat', 'Yi-6B', 'Yi-1.5-34B-Chat', 'Yi-1.5-34B-Chat-16K', 'Yi-1.5-34B', 'Yi-1.5-34B-32K', 'Yi-1.5-6B', 'Yi-1.5-6B-Chat', 'Yi-1.5-9B', 'Yi-1.5-9B-Chat', 'Yi-1.5-9B-32K', 'Yi-1.5-9B-Chat-16K']
 
     last_posted_issue_id = {}
     while True:
+        print("Checking hf new issues...")
         for model_name in model_names:
             if model_name not in last_posted_issue_id.keys():
                 last_posted_issue_id[model_name] = len(fetch_hf_all_issues(model_name))
@@ -82,5 +88,5 @@ if __name__ == '__main__':
 
             last_posted_issue_id[model_name] = len(current_issues)
 
-        time.sleep(1800)
+        time.sleep(180)
 

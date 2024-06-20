@@ -1,6 +1,6 @@
 # GitHub issue bot
-webbook_url_gh_bot: 'your_webhook_url_goes_here'
-webhook_url_hf_bot: 'your_webhook_url_goes_here'
+webbook_url_gh_bot: 
+webhook_url_hf_bot: 
 
 # FAQ generator
 API_BASE: "https://api.lingyiwanwu.com/v1"
@@ -8,10 +8,13 @@ API_KEY: "api_key"
 
 # Dashboard
 github:
-  token: your_token_goes_here
+  token: 
 Yi:
   owner: 01-ai
   repo: Yi
+Yi-1.5:
+  owner: 01-ai
+  repo: Yi-1.5
 Qwen:
   owner: QwenLM
   repo: Qwen
@@ -39,5 +42,5 @@ gemma:
 mistral:
   owner: mistralai
   repo: mistral-src
-github_repo: [Yi, Qwen, Baichuan2, Baichuan-7B, Baichuan-13B, InternLM, llama, gemma, mistral]
+github_repo: [Yi, Yi-1.5, Qwen, Baichuan2, Baichuan-7B, Baichuan-13B, InternLM, llama, gemma, mistral]
 hugging_face: [Yi, Qwen, Baichuan, InternLM, llama, gemma, mistral]
