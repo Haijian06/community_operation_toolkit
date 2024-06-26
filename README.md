@@ -6,7 +6,7 @@ git clone https://github.com/markli404/community_operation_toolkit.git
 ```
 ### 0.b Install Required Packages
 ```commandline
-cd community_healthiness
+cd community_operation_toolkit
 pip install -r requirements.txt
 ```
 ## 1. Edit Configurations
