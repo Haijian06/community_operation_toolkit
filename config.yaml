@@ -1,14 +1,14 @@
 # GitHub issue bot
-webbook_url_gh_bot: https://open.feishu.cn/open-apis/bot/v2/hook/42e24f9c-49bb-451b-86c5-ffc954157e9d
-webhook_url_hf_bot: https://open.feishu.cn/open-apis/bot/v2/hook/8d6e1931-a8c4-44ed-b0fb-cd36a9fa50b4
+webbook_url_gh_bot: 
+webhook_url_hf_bot: 
 
 # FAQ generator
 API_BASE: "https://api.lingyiwanwu.com/v1"
-API_KEY: "70116f6e1e2947dda1d75c18c4f59280"
+API_KEY: ""
 
 # Dashboard
 github:
-  token: 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
+  token: 
 Yi:
   owner: 01-ai
   repo: Yi
